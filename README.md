@@ -23,3 +23,8 @@ Any adjustments and customizations can be made by changing the _settings.scss pa
 Skining should be made by adding your css to a new file. You can use the Skin Builder for that, as I did in the example. The Pure Skin file is named pureskellietest.scss for sass functionality embeded. I chose Pure because it is simple: one single file to add. And the Skin Builder is awesome. 
 
 Icons also available! Using the Font Awesome package, feel free to substitute if you want.
+
+Coming Up Next:
+===============
+
+The actual infinite scrolling part, which will be lazy loading enabled!
