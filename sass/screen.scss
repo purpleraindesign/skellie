@@ -29,6 +29,7 @@ figure img, figure object, figure embed, figure video {
     display: block;
     margin: 0 auto;
     border-radius: 10px;
+		border: 1px solid black;
 }
 
 figure figcaption {
@@ -84,11 +85,13 @@ p {
       clear: both;
       margin: 0 $column;
       text-align: center;
+			display: block;
     }
 
 .right {
       clear: both;
       float: right;
+			display: block;
 }
 
 .left {
@@ -142,12 +145,12 @@ h3 {
 *  Note: box-sizing will not work in IE6-7
 */
 
-.wrapper {
+.grid {
 	padding: 0 #{($line/2)/$em}em;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	    -ms-box-sizing: border-box;
-			box-sizing: border-box;
+					box-sizing: border-box;
 }
 
 /*
@@ -206,25 +209,16 @@ h3 {
 		margin: 0 $column*1;
 	}
 
-	#twoway .wrapper {
+	#twoway .grid {
 		float: left;
 		width: 50%;
 	}
 
-    #fourway .wrapper {
+    #fourway .grid {
 		float: left;
 		width: 25%;
 	}
 
-    .clear {
-      clear: both;
-    }
-
-    .center {
-      clear: both;
-      margin: 0 $column*3;
-      text-align: center;
-    }
 
 }
 
@@ -319,24 +313,24 @@ h3 {
 		margin: 0 $column*1;
 	}
 
-	header .wrapper {
+	header .grid {
 		width: 37.5%;
 		margin-left: 25%;
 	}
 
-	#twoway .wrapper {
+	#twoway .grid {
 		width: 25%;
 	}
 
-	#twoway .wrapper:first-child {
+	#twoway .grid:first-child {
 		margin-left: 12.5%;
 	}
 
-    #fourway .wrapper {
+    #fourway .grid {
 		width: 12.5%;
 	}
 
-	#fourway .wrapper:first-child {
+	#fourway .grid:first-child {
 		margin-left: 7%;
 	}
 

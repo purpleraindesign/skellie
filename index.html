@@ -4,39 +4,47 @@
     <meta charset="utf-8">
     <title>Ellie's Skeleton File</title>
 
-    <link rel="stylesheet" href="stylesheets/screen.css">
+		<link rel="stylesheet" href="stylesheets/screen.css">
+		<link rel="stylesheet" href="stylesheets/onepagescroll.css">
   </head>
 
   <body class="pure-skin-skellietest">
-    <header>
-      <section class="wrapper">
-        <h1 class="logo center">Purple Rain</h1>
-        <h2>a new design agency</h2>
-      </section>
-    </header>
-
-    <article>
-      <section class="wrapper">
+		
+    <article class="main">
+				<section class="grid">
+					<h1 class="logo center">Purple Rain</h1>
+					<h2>a new design agency</h2>
+				</section>
+			
+      <section class="grid">
         <p>This should span the whole line.</p>
         <button class="button-success pure-button">Success Button</button>
         <button class="button-error pure-button">Error Button</button>
         <button class="button-warning pure-button">Warning Button</button>
         <button class="button-secondary pure-button">Secondary Button</button>
       </section>
+			
+			<section class="grid">
+        <p class="right">This should go to the right.</p>
+      </section>
 
-      <section class="wrapper">
+      <section class="grid">
         <p>Testing components? Does Pure Grids work alongside?</p>
         <p>Let's try it out shall we? A caca da fada fede.</p>
         <p>Here's a kitty cat:</p>
         <p>
           <figure>
-            <img src="http://lorempixel.com/output/cats-q-c-640-480-8.jpg" id="kittycat" class="pure-img">
+            <img src="http://lorempixel.com/output/cats-q-c-640-480-8.jpg" id="kittycat" class="right">
             <figcaption class="right">Cuz cats!</figcaption>
           </figure>
         </p>
       </section>
     </article>
-
-  <script type="text/javascript" src="bower_components/golden-grid-system/GGS.js"></script>
+		
+		
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="scripts/jquery.onepage-scroll-min.js"></script>
+  <script type="text/javascript" src="scripts/GGS.js"></script>
+	<script type="text/javascript" src="scripts/app.js"></script>
   </body>
 </html>
