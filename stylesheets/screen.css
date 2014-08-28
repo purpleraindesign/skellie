@@ -1,0 +1,454 @@
+/* A very basic sass skeleton for website creation using infinite scroll */
+@import url("http://fonts.googleapis.com/css?family=Flavors");
+@import url("../stylesheets/pureskellietest.css");
+/* line 17, ../../../../../Users/Camila/.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Users/Camila/.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Users/Camila/.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Users/Camila/.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Users/Camila/.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Users/Camila/.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Users/Camila/.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Users/Camila/.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Users/Camila/.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+*
+*  Golden Grid System (1.0)	<http://goldengridsystem.com/>
+*  by Joni Korpi 				<http://jonikorpi.com/>
+*  licensed under MIT			<http://opensource.org/licenses/mit-license.php>
+*
+*/
+/*
+*   Font sizing
+*/
+/*
+*  Font loading
+*/
+/*
+*  Import fonts
+*/
+/*
+*
+*  Simple fluid media
+*
+*/
+/* line 21, ../sass/screen.scss */
+figure {
+  position: relative;
+  padding-bottom: 5.55556%;
+}
+
+/* line 27, ../sass/screen.scss */
+figure img, figure object, figure embed, figure video {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* line 34, ../sass/screen.scss */
+figure figcaption {
+  /* 13px / 18px */
+  font-size: 0.8125em;
+  line-height: 1.38462em;
+  padding-top: 0.33333em;
+}
+
+/* line 39, ../sass/screen.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/*
+*
+*	Zoomable baseline grid
+*	type size presets
+*
+*/
+/* line 51, ../sass/screen.scss */
+body {
+  color: purple;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: "Verdana", sans-serif;
+  /* 16px / 24px */
+  line-height: 1.5em;
+}
+
+/* line 59, ../sass/screen.scss */
+h3 {
+  /* 16px / 24px */
+  font-size: 1em;
+  line-height: 1.5em;
+  /* 24 */
+  font-weight: bold;
+}
+
+/* line 64, ../sass/screen.scss */
+h2, h1 {
+  /* 26 / 36px */
+  font-size: 1.625em;
+  line-height: 1.38462em;
+}
+
+/* line 68, ../sass/screen.scss */
+p {
+  padding-top: 0.66667em;
+}
+
+/*
+*   Utility Classes
+*/
+/* line 76, ../sass/screen.scss */
+.logo {
+  /* 110px / 120px */
+  font-size: 4.5em;
+  line-height: 1.09091em;
+  color: purple;
+  font-size: 72;
+  font-weight: 400;
+  font-family: "Flavors", cursive;
+}
+
+/* line 83, ../sass/screen.scss */
+.center {
+  clear: both;
+  margin: 0 5.55556%;
+  text-align: center;
+}
+
+/* line 89, ../sass/screen.scss */
+.right {
+  clear: both;
+  float: right;
+}
+
+/* line 94, ../sass/screen.scss */
+.left {
+  clear: both;
+  float: left;
+}
+
+/* line 99, ../sass/screen.scss */
+.top-space {
+  padding-top: 2em;
+}
+
+/*
+*
+*  Four-column grid active
+*  ----------------------------------------
+*  Margin   | #  1   2   3   4   |   Margin
+*  5.55555% | %  25  50  75  100 | 5.55555%
+*
+*/
+/* line 114, ../sass/screen.scss */
+body {
+  /* 13px / 18px */
+  font-size: 0.8125em;
+  line-height: 1.38462em;
+}
+
+/* line 118, ../sass/screen.scss */
+header, article, #twoway, #fourway {
+  margin: 0 5.55556%;
+}
+
+/* line 122, ../sass/screen.scss */
+h1, h2 {
+  margin: 0.92308em 0 1.38462em;
+  font-weight: bold;
+}
+
+/* line 127, ../sass/screen.scss */
+h1 {
+  /* 42px / 48px */
+  font-size: 2.625em;
+  line-height: 1.14286em;
+}
+
+/* line 131, ../sass/screen.scss */
+h2 {
+  font-weight: bold;
+  /* 26 / 36px */
+  font-size: 1.625em;
+  line-height: 1.38462em;
+}
+
+/* line 136, ../sass/screen.scss */
+h3 {
+  margin: 1.5em 0 1.5em;
+}
+
+/*
+*  Simple elastic gutters
+*  Note: box-sizing will not work in IE6-7
+*/
+/* line 145, ../sass/screen.scss */
+.wrapper {
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+*
+*  Fixes for IE6-8
+*  http://jonikorpi.com/leaving-old-IE-behind/
+*
+*/
+/* line 160, ../sass/screen.scss */
+.ie body {
+  width: 40em;
+  margin: 0 auto;
+  font-size: 1.0625em;
+}
+
+/* line 166, ../sass/screen.scss */
+.ie h1 {
+  /* 42px / 48px */
+  font-size: 2.625em;
+  line-height: 1.14286em;
+  margin: 1.14286em 0 0.57143em;
+}
+
+/* @media screen and (min-width: 640px) */
+@media screen and (min-width: 40em) {
+  /* line 174, ../sass/screen.scss */
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: 1.0625em;
+  }
+
+  /* line 179, ../sass/screen.scss */
+  h1 {
+    /* 42px / 48px */
+    font-size: 2.625em;
+    line-height: 1.14286em;
+    margin: 1.14286em 0 0.57143em;
+  }
+}
+/*
+*
+*  Eight-column grid active
+*  ----------------------------------------------------------------------
+*  Margin   | #  1     2     3     4     5     6     7     8   |   Margin
+*  5.55555% | %  12.5  25.0  37.5  50.0  62.5  75.0  87.5  100 | 5.55555%
+*
+*
+*/
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+  /* line 200, ../sass/screen.scss */
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+    font-size: 1em;
+  }
+
+  /* line 205, ../sass/screen.scss */
+  header, article, #twoway, #fourway {
+    margin: 0 5.55556%;
+  }
+
+  /* line 209, ../sass/screen.scss */
+  #twoway .wrapper {
+    float: left;
+    width: 50%;
+  }
+
+  /* line 214, ../sass/screen.scss */
+  #fourway .wrapper {
+    float: left;
+    width: 25%;
+  }
+
+  /* line 219, ../sass/screen.scss */
+  .clear {
+    clear: both;
+  }
+
+  /* line 223, ../sass/screen.scss */
+  .center {
+    clear: both;
+    margin: 0 16.66667%;
+    text-align: center;
+  }
+}
+/* @media screen and (min-width: 888px) */
+@media screen and (min-width: 55.5em) {
+  /* line 235, ../sass/screen.scss */
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: 1em;
+  }
+
+  /* line 240, ../sass/screen.scss */
+  header, article, #twoway, #fourway {
+    margin: 0 11.11111%;
+  }
+}
+/* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) {
+  /* line 249, ../sass/screen.scss */
+  body {
+    /* Reset baseline grid to 16/16 = 1.0 */
+    font-size: 1.0625em;
+  }
+
+  /* line 254, ../sass/screen.scss */
+  header, article, #twoway, #fourway {
+    margin: 0 11.11111%;
+  }
+}
+/* @media screen and (min-width: 1200px) */
+@media screen and (min-width: 75em) {
+  /* line 264, ../sass/screen.scss */
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: 1.0625em;
+  }
+
+  /* line 269, ../sass/screen.scss */
+  header, article, #twoway, #fourway {
+    margin: 0 16.66667%;
+  }
+}
+/* @media screen and (min-width: 1392px) */
+@media screen and (min-width: 87em) {
+  /* line 278, ../sass/screen.scss */
+  body {
+    /* Reset baseline grid to 16/16 = 1.0 */
+    font-size: 1.0625em;
+  }
+
+  /* line 283, ../sass/screen.scss */
+  header, article, #twoway, #fourway {
+    margin: 0 16.66667%;
+  }
+}
+/* @media screen and (min-width: 1680px) */
+@media screen and (min-width: 105em) {
+  /* line 293, ../sass/screen.scss */
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: 1.125em;
+  }
+
+  /* line 298, ../sass/screen.scss */
+  header, article, #twoway, #fourway {
+    margin: 0 27.77778%;
+  }
+}
+/*
+*
+*  Sixteen-column grid active
+*  ----------------------------------------------------------------------------------------------------------------------
+*  Margin   | #  1     2     3     4     5     6     7     8     9     10    11    12    13    14    15    16  |   Margin
+*  5.55555% | %  6.25  12.5  18.75 25.0  31.25 37.5  43.75 50.0  56.25 62.5  68.75 75.0  81.25 87.5  93.75 100 | 5.55555%
+*
+*
+*/
+/* @media screen and (min-width: 1872px) */
+@media screen and (min-width: 117em) {
+  /* line 318, ../sass/screen.scss */
+  header, article, #twoway, #fourway {
+    margin: 0 5.55556%;
+  }
+
+  /* line 322, ../sass/screen.scss */
+  header .wrapper {
+    width: 37.5%;
+    margin-left: 25%;
+  }
+
+  /* line 327, ../sass/screen.scss */
+  #twoway .wrapper {
+    width: 25%;
+  }
+
+  /* line 331, ../sass/screen.scss */
+  #twoway .wrapper:first-child {
+    margin-left: 12.5%;
+  }
+
+  /* line 335, ../sass/screen.scss */
+  #fourway .wrapper {
+    width: 12.5%;
+  }
+
+  /* line 339, ../sass/screen.scss */
+  #fourway .wrapper:first-child {
+    margin-left: 7%;
+  }
+}
+/* @media screen and (min-width: 2080px) */
+@media screen and (min-width: 130em) {
+  /* line 349, ../sass/screen.scss */
+  body {
+    /* Zoom baseline grid to 18/16 = 1.125 */
+    font-size: 1.125em;
+    max-width: 160 em;
+  }
+
+  /* line 355, ../sass/screen.scss */
+  header, article, #twoway, #fourway {
+    margin: 0 27.77778%;
+  }
+}

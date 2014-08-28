@@ -1,0 +1,53 @@
+/*
+*
+*  Golden Grid System (1.0)	<http://goldengridsystem.com/>
+*  by Joni Korpi 				<http://jonikorpi.com/>
+*  licensed under MIT			<http://opensource.org/licenses/mit-license.php>
+*
+*/
+
+
+//
+// Base numbers
+// This whole system is proportional. Be carefull when setting these values.
+//
+
+$line: 24;
+$column: 100% / 18; //16 content columns + 2 margin columns
+$font-size: 16;
+$em: $font-size * 1;
+
+// Override top-space here, use value in em
+// The default value is: $top-space: #{$line/$em}em;
+$top-space: 2em;
+
+//
+// Styles:
+// using Pure (http://purecss.io)
+// if you want to use a skin file, add the skin url below:
+$file-to-use: '../stylesheets/pureskellietest.css';
+
+//
+// Branding
+
+$brand-color: purple;
+$primary-color: #b455b4;
+$secondary-color: #4b044b;
+//
+// Fonts
+// Using Google fonts as example
+$logo-font-url: 'http://fonts.googleapis.com/css?family=Flavors';
+$logo-font-family: 'Flavors', cursive;
+$logo-font-color: $brand-color;
+$logo-font-weight: 400;
+$logo-font-size: 72;
+
+// No need for Google fonts?
+//$text-font-url: '';
+$text-font-family: 'Verdana', sans-serif;
+$text-font-color: $brand-color;
+$text-font-weight: 400;
+$text-font-size: $font-size;
+
+//
+//  Icon Font: Font Awesome.
