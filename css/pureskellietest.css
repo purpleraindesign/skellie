@@ -1,0 +1,1023 @@
+/*
+*
+*  Golden Grid System (1.0)	<http://goldengridsystem.com/>
+*  by Joni Korpi 				<http://jonikorpi.com/>
+*  licensed under MIT			<http://opensource.org/licenses/mit-license.php>
+*
+*/
+/*
+*   Font sizing
+*/
+/*
+*  Font loading
+*/
+/* line 4, ../sass/pureskellietest.scss */
+.pure-skin-skellietest {
+  background-color: #4a024a; }
+
+/* from PURE buttons-core.css */
+/* line 9, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-button {
+  /* Structure */
+  display: inline-block;
+  *display: inline;
+  /*IE 6/7*/
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: baseline;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* Firefox: Get rid of the inner focus border */
+/* line 27, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+/* end from PURE buttons-core.css */
+/* from PURE buttons.css */
+/*csslint unqualified-attributes:false*/
+/* line 35, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-button {
+  font-size: 100%;
+  *font-size: 90%;
+  /*IE 6/7 - To reduce IE's oversized button text*/
+  *overflow: visible;
+  /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+  padding: 0.5em 1.5em 0.5em;
+  color: #e6e6e6;
+  /* rgba not supported (IE 8) */
+  /* color: rgba(0, 0, 0, 0.80); rgba supported */
+  /* *color: #444; IE 6 & 7 */
+  border: 1px solid #4781ae;
+  /*IE 6/7/8*/
+  border: none rgba(0, 0, 0, 0);
+  /*IE9 + everything else*/
+  background-color: #b455b4;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-font-smoothing: antialiased;
+  /* Transitions */
+  -webkit-transition: 0.1s linear -webkit-box-shadow;
+  -moz-transition: 0.1s linear -moz-box-shadow;
+  -ms-transition: 0.1s linear box-shadow;
+  -o-transition: 0.1s linear box-shadow;
+  transition: 0.1s linear box-shadow; }
+
+/* line 58, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-button-hover,
+.pure-skin-skellietest .pure-button:hover {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.05)));
+  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.15));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05));
+  background-image: -ms-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.15));
+  background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.05));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.05)); }
+
+/* line 68, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-button:focus {
+  outline: 0; }
+
+/* line 72, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-button-active,
+.pure-skin-skellietest .pure-button:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset; }
+
+/* line 79, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-button[disabled],
+.pure-skin-skellietest .pure-button-disabled,
+.pure-skin-skellietest .pure-button-disabled:hover,
+.pure-skin-skellietest .pure-button-disabled:active {
+  border: none;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: alpha(opacity=40);
+  -khtml-opacity: 0.40;
+  -moz-opacity: 0.40;
+  opacity: 0.40;
+  cursor: not-allowed;
+  box-shadow: none; }
+
+/* line 91, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-button-hidden {
+  display: none; }
+
+/* Firefox: Get rid of the inner focus border */
+/* line 96, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+/* line 103, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-button-selected,
+.pure-skin-skellietest a.pure-button-primary,
+.pure-skin-skellietest a.pure-button-selected {
+  background-color: #b455b4;
+  color: #050300; }
+
+/* line 108, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .button-success {
+  background-color: green;
+  color: #e6e6e6; }
+
+/* line 113, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .button-warning {
+  background-color: #facb04;
+  color: #e6e6e6; }
+
+/* line 118, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .button-error {
+  background-color: red;
+  color: #e6e6e6; }
+
+/*! Copyright 2013 Yahoo! Inc. http://yuilibrary.com/license/ */
+/* This page lists core form styles adopted from Normalize.css. */
+/*! Copyright (c) Nicolas Gallagher and Jonathan Neal */
+/*! normalize.css v1.1.0 | MIT License | git.io/normalize */
+/* This page has Normalize.css form-specific style rules applied to a .yui3-form context */
+/* ==========
+Forms Core
+=========*/
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+/* line 140, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form {
+  margin: 0; }
+
+/* Define consistent border, margin, and padding.*/
+/* line 147, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+/* line 159, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */ }
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+/* line 176, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form button,
+.pure-skin-skellietest .pure-form input,
+.pure-skin-skellietest .pure-form select,
+.pure-skin-skellietest .pure-form textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */ }
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 189, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form button,
+.pure-skin-skellietest .pure-form input {
+  line-height: normal; }
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 206, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form button,
+.pure-skin-skellietest .pure-form input[type="button"],
+.pure-skin-skellietest .pure-form input[type="reset"],
+.pure-skin-skellietest .pure-form input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */ }
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 217, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form button[disabled],
+.pure-skin-skellietest .pure-form input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 229, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form input[type="checkbox"],
+.pure-skin-skellietest .pure-form input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */ }
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 242, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 255, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form input[type="search"]::-webkit-search-cancel-button,
+.pure-skin-skellietest .pure-form input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+/* line 264, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form button::-moz-focus-inner,
+.pure-skin-skellietest .pure-form input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 274, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ===============  forms-responsive.css =================*/
+@media only screen and (max-width: 480px) {
+  /* line 280, ../sass/pureskellietest.scss */
+  .pure-skin-skellietest .pure-form button[type="submit"] {
+    margin: 0.7em 0 0; }
+
+  /* line 298, ../sass/pureskellietest.scss */
+  .pure-skin-skellietest .pure-form input[type="text"],
+  .pure-skin-skellietest .pure-form input[type="password"],
+  .pure-skin-skellietest .pure-form input[type="email"],
+  .pure-skin-skellietest .pure-form input[type="url"],
+  .pure-skin-skellietest .pure-form input[type="date"],
+  .pure-skin-skellietest .pure-form input[type="month"],
+  .pure-skin-skellietest .pure-form input[type="time"],
+  .pure-skin-skellietest .pure-form input[type="datetime"],
+  .pure-skin-skellietest .pure-form input[type="datetime-local"],
+  .pure-skin-skellietest .pure-form input[type="week"],
+  .pure-skin-skellietest .pure-form input[type="number"],
+  .pure-skin-skellietest .pure-form input[type="search"],
+  .pure-skin-skellietest .pure-form input[type="tel"],
+  .pure-skin-skellietest .pure-form input[type="color"],
+  .pure-skin-skellietest .pure-form label {
+    margin-bottom: 0.3em;
+    display: block; }
+
+  /* line 316, ../sass/pureskellietest.scss */
+  .pure-skin-skellietest .pure-group input[type="text"],
+  .pure-skin-skellietest .pure-group input[type="password"],
+  .pure-skin-skellietest .pure-group input[type="email"],
+  .pure-skin-skellietest .pure-group input[type="url"],
+  .pure-skin-skellietest .pure-group input[type="date"],
+  .pure-skin-skellietest .pure-group input[type="month"],
+  .pure-skin-skellietest .pure-group input[type="time"],
+  .pure-skin-skellietest .pure-group input[type="datetime"],
+  .pure-skin-skellietest .pure-group input[type="datetime-local"],
+  .pure-skin-skellietest .pure-group input[type="week"],
+  .pure-skin-skellietest .pure-group input[type="number"],
+  .pure-skin-skellietest .pure-group input[type="search"],
+  .pure-skin-skellietest .pure-group input[type="tel"],
+  .pure-skin-skellietest .pure-group input[type="color"] {
+    margin-bottom: 0; }
+
+  /* line 320, ../sass/pureskellietest.scss */
+  .pure-skin-skellietest .pure-form-aligned .pure-control-group label {
+    margin-bottom: 0.3em;
+    text-align: left;
+    display: block;
+    width: 100%; }
+
+  /* line 327, ../sass/pureskellietest.scss */
+  .pure-skin-skellietest .pure-form-aligned .pure-controls {
+    margin: 1.5em 0 0 0; }
+
+  /* NOTE: pure-help-inline is deprecated. Use .pure-form-message-inline instead. */
+  /* line 334, ../sass/pureskellietest.scss */
+  .pure-skin-skellietest .pure-form .pure-help-inline,
+  .pure-skin-skellietest .pure-form-message-inline,
+  .pure-skin-skellietest .pure-form-message {
+    display: block;
+    font-size: 80%;
+    /* increased bottom padding to make it group with its related input element */
+    padding: 0.2em 0 0.8em; } }
+/* ===============  forms.css =================================*/
+/* line 358, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form input[type="text"],
+.pure-skin-skellietest .pure-form input[type="password"],
+.pure-skin-skellietest .pure-form input[type="email"],
+.pure-skin-skellietest .pure-form input[type="url"],
+.pure-skin-skellietest .pure-form input[type="date"],
+.pure-skin-skellietest .pure-form input[type="month"],
+.pure-skin-skellietest .pure-form input[type="time"],
+.pure-skin-skellietest .pure-form input[type="datetime"],
+.pure-skin-skellietest .pure-form input[type="datetime-local"],
+.pure-skin-skellietest .pure-form input[type="week"],
+.pure-skin-skellietest .pure-form input[type="number"],
+.pure-skin-skellietest .pure-form input[type="search"],
+.pure-skin-skellietest .pure-form input[type="tel"],
+.pure-skin-skellietest .pure-form input[type="color"],
+.pure-skin-skellietest .pure-form select,
+.pure-skin-skellietest .pure-form textarea {
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  border: 1px solid #e6e6e6;
+  font-size: 0.8em;
+  box-shadow: inset 0 1px 3px #e6e6e6;
+  border-radius: 4px;
+  -webkit-transition: 0.3s linear border;
+  -moz-transition: 0.3s linear border;
+  -ms-transition: 0.3s linear border;
+  -o-transition: 0.3s linear border;
+  transition: 0.3s linear border;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 391, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form input[type="text"]:focus,
+.pure-skin-skellietest .pure-form input[type="password"]:focus,
+.pure-skin-skellietest .pure-form input[type="email"]:focus,
+.pure-skin-skellietest .pure-form input[type="url"]:focus,
+.pure-skin-skellietest .pure-form input[type="date"]:focus,
+.pure-skin-skellietest .pure-form input[type="month"]:focus,
+.pure-skin-skellietest .pure-form input[type="time"]:focus,
+.pure-skin-skellietest .pure-form input[type="datetime"]:focus,
+.pure-skin-skellietest .pure-form input[type="datetime-local"]:focus,
+.pure-skin-skellietest .pure-form input[type="week"]:focus,
+.pure-skin-skellietest .pure-form input[type="number"]:focus,
+.pure-skin-skellietest .pure-form input[type="search"]:focus,
+.pure-skin-skellietest .pure-form input[type="tel"]:focus,
+.pure-skin-skellietest .pure-form input[type="color"]:focus,
+.pure-skin-skellietest .pure-form select:focus,
+.pure-skin-skellietest .pure-form textarea:focus {
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+  border-color: #129FEA; }
+
+/* line 399, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form input[type="file"]:focus,
+.pure-skin-skellietest .pure-form input[type="radio"]:focus,
+.pure-skin-skellietest .pure-form input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 1px auto #129FEA; }
+
+/* line 404, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form .pure-checkbox,
+.pure-skin-skellietest .pure-form .pure-radio {
+  margin: 0.5em 0;
+  display: block; }
+
+/* line 423, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form input[type="text"][disabled],
+.pure-skin-skellietest .pure-form input[type="password"][disabled],
+.pure-skin-skellietest .pure-form input[type="email"][disabled],
+.pure-skin-skellietest .pure-form input[type="url"][disabled],
+.pure-skin-skellietest .pure-form input[type="date"][disabled],
+.pure-skin-skellietest .pure-form input[type="month"][disabled],
+.pure-skin-skellietest .pure-form input[type="time"][disabled],
+.pure-skin-skellietest .pure-form input[type="datetime"][disabled],
+.pure-skin-skellietest .pure-form input[type="datetime-local"][disabled],
+.pure-skin-skellietest .pure-form input[type="week"][disabled],
+.pure-skin-skellietest .pure-form input[type="number"][disabled],
+.pure-skin-skellietest .pure-form input[type="search"][disabled],
+.pure-skin-skellietest .pure-form input[type="tel"][disabled],
+.pure-skin-skellietest .pure-form input[type="color"][disabled],
+.pure-skin-skellietest .pure-form select[disabled],
+.pure-skin-skellietest .pure-form textarea[disabled] {
+  cursor: not-allowed;
+  box-shadow: inset 0 1px 10px #ededed;
+  background-color: #ededed;
+  color: #adadad;
+  border-color: #e6e6e6; }
+
+/* line 435, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form input[readonly],
+.pure-skin-skellietest .pure-form select[readonly],
+.pure-skin-skellietest .pure-form textarea[readonly],
+.pure-skin-skellietest .pure-form input[readonly]:focus,
+.pure-skin-skellietest .pure-form select[readonly]:focus,
+.pure-skin-skellietest .pure-form textarea[readonly]:focus {
+  background: #eee;
+  /* menu hover bg color */
+  color: #777;
+  /* menu text color */
+  border-color: #ccc; }
+
+/* line 442, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form input:focus:invalid,
+.pure-skin-skellietest .pure-form textarea:focus:invalid,
+.pure-skin-skellietest .pure-form select:focus:invalid {
+  color: #b94a48;
+  border: 1px solid #ee5f5b; }
+
+/* line 448, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form input:focus:invalid:focus,
+.pure-skin-skellietest .pure-form textarea:focus:invalid:focus,
+.pure-skin-skellietest .pure-form select:focus:invalid:focus {
+  border-color: #e9322d; }
+
+/* line 453, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form input[type="file"]:focus:invalid:focus,
+.pure-skin-skellietest .pure-form input[type="radio"]:focus:invalid:focus,
+.pure-skin-skellietest .pure-form input[type="checkbox"]:focus:invalid:focus {
+  outline-color: #e9322d; }
+
+/* line 456, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form select {
+  border: 1px solid #e6e6e6;
+  background-color: white; }
+
+/* line 460, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form select[multiple] {
+  height: auto; }
+
+/* line 463, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form label {
+  margin: 0.5em 0 0.2em;
+  color: #4f4f4f;
+  font-size: 90%; }
+
+/* line 468, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form fieldset {
+  margin: 0;
+  padding: 0.35em 0 0.75em;
+  border: 0; }
+
+/* line 473, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form legend {
+  display: block;
+  width: 100%;
+  padding: 0.3em 0;
+  margin-bottom: 0.3em;
+  font-size: 125%;
+  color: #262626;
+  border-bottom: 1px solid #ededed; }
+
+/* line 499, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form-stacked input[type="text"],
+.pure-skin-skellietest .pure-form-stacked input[type="password"],
+.pure-skin-skellietest .pure-form-stacked input[type="email"],
+.pure-skin-skellietest .pure-form-stacked input[type="url"],
+.pure-skin-skellietest .pure-form-stacked input[type="date"],
+.pure-skin-skellietest .pure-form-stacked input[type="month"],
+.pure-skin-skellietest .pure-form-stacked input[type="time"],
+.pure-skin-skellietest .pure-form-stacked input[type="datetime"],
+.pure-skin-skellietest .pure-form-stacked input[type="datetime-local"],
+.pure-skin-skellietest .pure-form-stacked input[type="week"],
+.pure-skin-skellietest .pure-form-stacked input[type="number"],
+.pure-skin-skellietest .pure-form-stacked input[type="search"],
+.pure-skin-skellietest .pure-form-stacked input[type="tel"],
+.pure-skin-skellietest .pure-form-stacked input[type="color"],
+.pure-skin-skellietest .pure-form-stacked select,
+.pure-skin-skellietest .pure-form-stacked label,
+.pure-skin-skellietest .pure-form-stacked textarea {
+  display: block;
+  margin: 0.25em 0; }
+
+/* line 509, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form-aligned input,
+.pure-skin-skellietest .pure-form-aligned textarea,
+.pure-skin-skellietest .pure-form-aligned select,
+.pure-skin-skellietest .pure-form-aligned .pure-help-inline,
+.pure-skin-skellietest .pure-form-message-inline {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+  *zoom: 1;
+  vertical-align: middle; }
+
+/* aligned Forms */
+/* line 517, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form-aligned .pure-control-group {
+  margin-bottom: 0.5em; }
+
+/* line 520, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form-aligned .pure-control-group label {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10em;
+  margin: 0 1em 0 0; }
+
+/* line 527, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form-aligned .pure-controls {
+  margin: 1.5em 0 0 10em; }
+
+/* Rounded Inputs */
+/* line 533, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form input.pure-input-rounded,
+.pure-skin-skellietest .pure-form .pure-input-rounded {
+  border-radius: 30px;
+  padding: 0.5em 1em; }
+
+/* Grouped Inputs */
+/* line 539, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form .pure-group fieldset {
+  margin-bottom: 10px; }
+
+/* line 542, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form .pure-group input {
+  display: block;
+  padding: 0.5em 0.6em;
+  margin: 0;
+  border-radius: 0;
+  position: relative;
+  top: -1px; }
+
+/* line 550, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form .pure-group input:focus {
+  z-index: 2; }
+
+/* line 553, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form .pure-group input:first-child {
+  top: 1px;
+  border-radius: 4px 4px 0px 0px; }
+
+/* line 557, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form .pure-group input:last-child {
+  top: -2px;
+  border-radius: 0px 0px 4px 4px; }
+
+/* line 561, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form .pure-group button {
+  margin: 0.35em 0; }
+
+/* line 565, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form .pure-input-1 {
+  width: 100%; }
+
+/* line 568, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form .pure-input-2-3 {
+  width: 66%; }
+
+/* line 571, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form .pure-input-1-2 {
+  width: 50%; }
+
+/* line 574, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form .pure-input-1-3 {
+  width: 33%; }
+
+/* line 577, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form .pure-input-1-4 {
+  width: 25%; }
+
+/* Inline help for forms */
+/* Note: pure-help-inline is deprecated. Use .pure-form-message-inline instead */
+/* line 584, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form .pure-help-inline,
+.pure-skin-skellietest .pure-form-message-inline {
+  display: inline-block;
+  padding-left: 0.3em;
+  color: #adadad;
+  vertical-align: middle;
+  font-size: 90%; }
+
+/* Block help for forms */
+/* line 593, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-form-message {
+  display: block;
+  color: #adadad;
+  font-size: 90%; }
+
+/* note no template for forms-r.css. no skinnable properties */
+/* foundational CSS */
+/* line 601, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-table {
+  /* Remove spacing between table cells (from Normalize.css) */
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #f7e6d4; }
+
+/* line 609, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-table caption {
+  color: #adadad;
+  font: italic 85%/1 arial, sans-serif;
+  padding: 1em 0;
+  text-align: center; }
+
+/* line 617, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-table td,
+.pure-skin-skellietest .pure-table th {
+  border-left: 1px solid #f7e6d4;
+  /* inner column border */
+  border-width: 0 0 0 1px;
+  font-size: inherit;
+  margin: 0;
+  overflow: visible;
+  /*to make ths where the title is really long work*/
+  padding: 0.3em 0.6em;
+  /* cell padding */ }
+
+/* line 627, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-table td:first-child,
+.pure-skin-skellietest .pure-table th:first-child {
+  border-left-width: 0; }
+
+/* line 631, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-table thead {
+  background-color: #badaf2;
+  color: #0c2a40;
+  text-align: left;
+  vertical-align: bottom; }
+
+/*
+striping:
+   even - #fff (white)
+   odd  - #f2f2f2 (light gray)
+*/
+/* line 643, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-table td {
+  background-color: #fcf5ee;
+  color: #6c4013; }
+
+/* line 647, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-table-odd td {
+  background-color: #f7e6d4;
+  color: #4a2a0d; }
+
+/* nth-child selector for modern browsers */
+/* line 653, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-table-striped tr:nth-child(2n-1) td {
+  background-color: #f7e6d4;
+  color: #4a2a0d; }
+
+/* BORDERED TABLES */
+/* line 660, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-table-bordered td {
+  border-bottom: 1px solid #f7e6d4; }
+
+/* line 664, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-table-bordered tbody > tr:last-child td,
+.pure-skin-skellietest .pure-table-horizontal tbody > tr:last-child td {
+  border-bottom-width: 0; }
+
+/* HORIZONTAL BORDERED TABLES */
+/* line 670, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-table-horizontal td,
+.pure-skin-skellietest .pure-table-horizontal th {
+  border-width: 0 0 1px 0;
+  border-bottom: 1px solid #f7e6d4; }
+
+/* line 674, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-table-horizontal tbody > tr:last-child td {
+  border-bottom-width: 0; }
+
+/* from PURE menu-core.css */
+/*csslint adjoining-classes:false, outline-none:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/
+/* line 682, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu ul {
+  position: absolute;
+  visibility: hidden; }
+
+/* line 687, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu.pure-menu-open {
+  visibility: visible;
+  z-index: 2;
+  width: 100%; }
+
+/* line 693, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu ul {
+  left: -10000px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  top: -10000px;
+  z-index: 1; }
+
+/* line 702, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu > ul {
+  position: relative; }
+
+/* line 704, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu-open > ul {
+  left: 0;
+  top: 0;
+  visibility: visible; }
+
+/* line 710, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu-open > ul:focus {
+  outline: 0; }
+
+/* line 714, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu li {
+  position: relative; }
+
+/* line 718, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu a, .pure-skin-skellietest .pure-menu .pure-menu-heading {
+  display: block;
+  color: inherit;
+  line-height: 1.5em;
+  padding: 0.35em 1.4em;
+  text-decoration: none;
+  white-space: nowrap; }
+
+/* line 727, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu.pure-menu-horizontal > .pure-menu-heading {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin: 0;
+  vertical-align: middle; }
+
+/* line 734, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu.pure-menu-horizontal > ul {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle;
+  /* height: 2.4em; removed for Skin Builder */ }
+
+/* line 742, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu li a {
+  padding: 0.35em 1.4em; }
+
+/* line 744, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu-can-have-children > .pure-menu-label:after {
+  content: '\25B8';
+  float: right;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+  /* These specific fonts have the Unicode char we need. */
+  margin-right: -20px;
+  margin-top: -1px; }
+
+/* line 752, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu-can-have-children > .pure-menu-label {
+  padding-right: 30px; }
+
+/* line 756, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu-separator {
+  background-color: #f7e6d4;
+  display: block;
+  height: 1px;
+  font-size: 0;
+  margin: 7px 2px;
+  overflow: hidden; }
+
+/* line 765, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu-hidden {
+  display: none; }
+
+/* FIXED MENU */
+/* line 770, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+/* HORIZONTAL MENU CODE */
+/* Initial menus should be inline-block so that they are horizontal */
+/* line 781, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu-horizontal li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle; }
+
+/* Submenus should still be display:block; */
+/* line 789, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu-horizontal li li {
+  display: block; }
+
+/* Content after should be down arrow */
+/* line 794, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu-horizontal > .pure-menu-children > .pure-menu-can-have-children > .pure-menu-label:after {
+  content: "\25BE"; }
+
+/*Add extra padding to elements that have the arrow so that the hover looks nice */
+/* line 798, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu-horizontal > .pure-menu-children > .pure-menu-can-have-children > .pure-menu-label {
+  padding-right: 30px; }
+
+/* Adjusting separator for vertical menus */
+/* line 803, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu-horizontal li.pure-menu-separator {
+  height: 50%;
+  width: 1px;
+  margin: 0 7px; }
+
+/* Submenus should be horizontal separator again */
+/* line 810, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu-horizontal li li.pure-menu-separator {
+  height: 1px;
+  width: auto;
+  margin: 7px 2px; }
+
+/* end from yuicss/menu-core.css *******************************************/
+/* from yuicss menu-paginator.css */
+/*csslint box-model:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/
+/* line 822, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-paginator {
+  /* `pure-g` Grid styles */
+  letter-spacing: -0.31em;
+  /* Webkit: collapse white-space between units */
+  *letter-spacing: normal;
+  /* reset IE < 8 */
+  *word-spacing: -0.43em;
+  /* IE < 8: collapse white-space between units */
+  text-rendering: optimizespeed;
+  /* Webkit: fixes text-rendering: optimizeLegibility */
+  /* `pure-paginator` Specific styles */
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 836, ../sass/pureskellietest.scss */
+.opera-only :-o-prefocus,
+.pure-skin-skellietest .pure-paginator {
+  word-spacing: -0.43em; }
+
+/* `pure-u` Grid styles */
+/* line 841, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-paginator li {
+  display: inline-block;
+  *display: inline;
+  /* IE < 8: fake inline-block */
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto; }
+
+/* line 850, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-paginator .pure-button {
+  border-radius: 0;
+  padding: 0.8em 1.4em;
+  vertical-align: top;
+  height: 1.1em; }
+
+/* line 857, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-paginator .pure-button:focus,
+.pure-skin-skellietest .pure-paginator .pure-button:active {
+  outline-style: none; }
+
+/* line 861, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-paginator .prev,
+.pure-skin-skellietest .pure-paginator .next {
+  /*color: #C0C1C3; allow .pure-button to color text*/ }
+
+/* line 864, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-paginator .prev {
+  border-radius: 4px 0px 0px 4px; }
+
+/* line 867, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-paginator .next {
+  border-radius: 0px 4px 4px 0px; }
+
+/* end from PURE menu-paginator.css ******************************/
+/* from PURE menu.css *******************************************/
+/* MAIN MENU STYLING */
+/*csslint adjoining-classes:false*/
+/*TODO: Remove this lint rule override after a refactor of this code.*/
+/* line 877, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu.pure-menu-open,
+.pure-skin-skellietest .pure-menu.pure-menu-horizontal li .pure-menu-children {
+  background: #fcf5ee;
+  /* Old browsers */
+  border: 1px solid #f7e6d4; }
+
+/* remove borders for horizontal menus */
+/* line 884, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu.pure-menu-horizontal,
+.pure-skin-skellietest .pure-menu.pure-menu-horizontal .pure-menu-heading {
+  border: none; }
+
+/* LINK STYLES */
+/* line 891, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu a {
+  border: 1px solid transparent;
+  border-left: none;
+  border-right: none; }
+
+/* line 899, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu a,
+.pure-skin-skellietest .pure-menu .pure-menu-can-have-children > li:after {
+  color: #6c4013; }
+
+/* line 903, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu .pure-menu-can-have-children > li:hover:after {
+  color: #4a2a0d; }
+
+/* Focus style for a dropdown menu-item when the parent has been opened */
+/* line 908, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu .pure-menu-open {
+  background: #f3d6ba; }
+
+/* line 913, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu li a:hover,
+.pure-skin-skellietest .pure-menu li a:focus {
+  background: #f3d6ba; }
+
+/* DISABLED STATES */
+/* line 919, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu li.pure-menu-disabled a:hover,
+.pure-skin-skellietest .pure-menu li.pure-menu-disabled a:focus {
+  background: #fcf5ee;
+  color: #e29e5a; }
+
+/* line 924, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu .pure-menu-disabled > a {
+  background-image: none;
+  border-color: transparent;
+  cursor: default; }
+
+/* line 931, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu .pure-menu-disabled > a,
+.pure-skin-skellietest .pure-menu .pure-menu-can-have-children.pure-menu-disabled > a:after {
+  color: #e29e5a; }
+
+/* HEADINGS */
+/* line 936, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu .pure-menu-heading {
+  color: #341f09;
+  text-transform: uppercase;
+  font-size: 90%;
+  margin-top: 0.5em;
+  border-bottom: solid 1px #f7e6d4; }
+
+/* SELECTED MENU ITEM */
+/* line 946, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu li.pure-menu-selected a {
+  background-color: #E77D04;
+  color: #050300; }
+
+/* FIXED MENU */
+/* line 952, ../sass/pureskellietest.scss */
+.pure-skin-skellietest .pure-menu.pure-menu-open.pure-menu-fixed {
+  border: none;
+  border-bottom: 1px solid #f7e6d4; }
+
+/* end from PURE menu.css ***********************************/
+/* from PURE menu-responsive.css ****************************/
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  /* line 962, ../sass/pureskellietest.scss */
+  .pure-skin-skellietest .pure-menu-horizontal {
+    width: 100%; }
+
+  /* line 966, ../sass/pureskellietest.scss */
+  .pure-skin-skellietest .pure-menu-children li {
+    display: block;
+    border-bottom: 1px solid #f7e6d4; } }
+/* end from menu-responsive.css ******************/
