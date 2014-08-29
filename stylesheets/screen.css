@@ -156,11 +156,10 @@ p {
 */
 /* line 75, ../sass/screen.scss */
 .main {
-  border: 1px solid yellow;
   display: block;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .logo {
   /* 110px / 120px */
   font-size: 4.5em;
@@ -171,7 +170,7 @@ p {
   font-family: "Flavors", cursive;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .center {
   clear: both;
   margin: 0 5.55556%;
@@ -179,20 +178,20 @@ p {
   display: block;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .right {
   clear: both;
   float: right;
   display: block;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .left {
   clear: both;
   float: left;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .top-space {
   margin-top: 2em;
 }
@@ -205,27 +204,27 @@ p {
 *  5.55555% | %  25  50  75  100 | 5.55555%
 *
 */
-/* line 124, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 body {
   /* 13px / 18px */
   font-size: 0.8125em;
   line-height: 1.38462em;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 h1, h2 {
   margin: 0.92308em 0 1.38462em;
   font-weight: bold;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 h1 {
   /* 42px / 48px */
   font-size: 2.625em;
   line-height: 1.14286em;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 h2 {
   font-weight: bold;
   /* 26 / 36px */
@@ -233,7 +232,7 @@ h2 {
   line-height: 1.38462em;
 }
 
-/* line 146, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 h3 {
   margin: 1.5em 0 1.5em;
 }
@@ -242,13 +241,13 @@ h3 {
 *  Simple elastic gutters
 *  Note: box-sizing will not work in IE6-7
 */
-/* line 154, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 .main {
   max-width: 83%;
   margin: 0 8.33333%;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .grid {
   padding: 0 0.75em;
   -webkit-box-sizing: border-box;
@@ -263,14 +262,14 @@ h3 {
 *  http://jonikorpi.com/leaving-old-IE-behind/
 *
 */
-/* line 174, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .ie body {
   width: 40em;
   margin: 0 auto;
   font-size: 1.0625em;
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .ie h1 {
   /* 42px / 48px */
   font-size: 2.625em;
@@ -280,13 +279,13 @@ h3 {
 
 /* @media screen and (min-width: 640px) */
 @media screen and (min-width: 40em) {
-  /* line 188, ../sass/screen.scss */
+  /* line 183, ../sass/screen.scss */
   body {
     /* Zoom baseline grid to 17/16 = 1.0625 */
     font-size: 1.0625em;
   }
 
-  /* line 193, ../sass/screen.scss */
+  /* line 188, ../sass/screen.scss */
   h1 {
     /* 42px / 48px */
     font-size: 2.625em;
@@ -305,25 +304,25 @@ h3 {
 */
 /* @media screen and (min-width: 720px) */
 @media screen and (min-width: 45em) {
-  /* line 214, ../sass/screen.scss */
+  /* line 209, ../sass/screen.scss */
   body {
     /* Reset baseline grid to 16/16 = 1 */
     font-size: 1em;
   }
 
-  /* line 219, ../sass/screen.scss */
+  /* line 214, ../sass/screen.scss */
   .main {
     max-width: 100%;
     margin: 0 7.22222%;
   }
 
-  /* line 228, ../sass/screen.scss */
+  /* line 223, ../sass/screen.scss */
   #twoway .grid {
     float: left;
     width: 50%;
   }
 
-  /* line 233, ../sass/screen.scss */
+  /* line 228, ../sass/screen.scss */
   #fourway .grid {
     float: left;
     width: 25%;
@@ -331,13 +330,13 @@ h3 {
 }
 /* @media screen and (min-width: 888px) */
 @media screen and (min-width: 55.5em) {
-  /* line 245, ../sass/screen.scss */
+  /* line 240, ../sass/screen.scss */
   body {
     /* Zoom baseline grid to 17/16 = 1.0625 */
     font-size: 1em;
   }
 
-  /* line 250, ../sass/screen.scss */
+  /* line 245, ../sass/screen.scss */
   .main {
     max-width: 100%;
     margin: 0 16.66667%;
@@ -345,7 +344,7 @@ h3 {
 }
 /* @media screen and (min-width: 984px) */
 @media screen and (min-width: 61.5em) {
-  /* line 264, ../sass/screen.scss */
+  /* line 259, ../sass/screen.scss */
   body {
     /* Reset baseline grid to 16/16 = 1.0 */
     font-size: 1.0625em;
@@ -353,7 +352,7 @@ h3 {
 }
 /* @media screen and (min-width: 1200px) */
 @media screen and (min-width: 75em) {
-  /* line 279, ../sass/screen.scss */
+  /* line 274, ../sass/screen.scss */
   body {
     /* Zoom baseline grid to 17/16 = 1.0625 */
     font-size: 1.0625em;
@@ -361,7 +360,7 @@ h3 {
 }
 /* @media screen and (min-width: 1392px) */
 @media screen and (min-width: 87em) {
-  /* line 293, ../sass/screen.scss */
+  /* line 288, ../sass/screen.scss */
   body {
     /* Reset baseline grid to 16/16 = 1.0 */
     font-size: 1.0625em;
@@ -369,7 +368,7 @@ h3 {
 }
 /* @media screen and (min-width: 1680px) */
 @media screen and (min-width: 105em) {
-  /* line 308, ../sass/screen.scss */
+  /* line 303, ../sass/screen.scss */
   body {
     /* Zoom baseline grid to 17/16 = 1.0625 */
     font-size: 1.125em;
@@ -386,53 +385,53 @@ h3 {
 */
 /* @media screen and (min-width: 1872px) */
 @media screen and (min-width: 117em) {
-  /* line 333, ../sass/screen.scss */
+  /* line 328, ../sass/screen.scss */
   header, article, #twoway, #fourway {
     margin: 0 5.55556%;
   }
 
-  /* line 337, ../sass/screen.scss */
+  /* line 332, ../sass/screen.scss */
   header .grid {
     width: 37.5%;
     margin-left: 25%;
   }
 
-  /* line 342, ../sass/screen.scss */
+  /* line 337, ../sass/screen.scss */
   #twoway .grid {
     width: 25%;
   }
 
-  /* line 346, ../sass/screen.scss */
+  /* line 341, ../sass/screen.scss */
   #twoway .grid:first-child {
     margin-left: 12.5%;
   }
 
-  /* line 350, ../sass/screen.scss */
+  /* line 345, ../sass/screen.scss */
   #fourway .grid {
     width: 12.5%;
   }
 
-  /* line 354, ../sass/screen.scss */
+  /* line 349, ../sass/screen.scss */
   #fourway .grid:first-child {
     margin-left: 7%;
   }
 }
 /* @media screen and (min-width: 2080px) */
 @media screen and (min-width: 130em) {
-  /* line 364, ../sass/screen.scss */
+  /* line 359, ../sass/screen.scss */
   body {
     /* Zoom baseline grid to 18/16 = 1.125 */
     font-size: 1.125em;
     max-width: 160 em;
   }
 
-  /* line 370, ../sass/screen.scss */
+  /* line 365, ../sass/screen.scss */
   .main {
     max-width: 100%;
     margin: 0 27.77778%;
   }
 
-  /* line 375, ../sass/screen.scss */
+  /* line 370, ../sass/screen.scss */
   header, article, #twoway, #fourway {
     margin: 0 27.77778%;
   }
