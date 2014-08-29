@@ -6,7 +6,6 @@
 
     <link rel="stylesheet" href="stylesheets/screen.css">
     <link rel="stylesheet" href="stylesheets/onepagescroll.css">
-    <link rel="stylesheet" href="stylesheets/fontawesome.css">
   </head>
 
   <body class="pure-skin-skellietest">
@@ -17,7 +16,7 @@
           <h1 class="logo center">Purple Rain</h1>
           <h3 class="center top-space">Our first tool on GitHub.</h3>
 
-          <h1>Skellie</h1>
+          <h1>Skellie <i class="fa fa-github"></i> </h1>
           <h2>
               is the frontend framework built for infinite scrolling, like a boss.
               No strings attached.
@@ -27,7 +26,7 @@
           <h3>Soon to come: lazy loading of partial views.</h3>
         </header>
         <article>
-          <p class="center"><button class="button-secondary pure-button">Download Skellie!</button></p>
+          <p class="center"><button class="button-primary pure-button">Download Skellie!</button></p>
         </article>
       </section>
 
@@ -108,14 +107,91 @@
       </header>
       <article>
         <p>
-            <h3>Buttons:</h3>
-            <button class="button-success pure-button">Success Button</button>
-            <button class="button-error pure-button">Error Button</button>
-            <button class="button-warning pure-button">Warning Button</button>
-            <button class="button-secondary pure-button">Secondary Button</button>
+          <button class="button-success pure-button">Success Button</button>
+          <button class="button-error pure-button">Error Button</button>
+          <button class="button-warning pure-button">Warning Button</button>
+          <button class="button-secondary pure-button">Secondary Button</button>
         </p>
 
-        <p>And if you really hate those colors, Pure offers you an awesome skin builder.</p>
+        <p>
+          <div class="pure-menu pure-menu-open pure-menu-horizontal">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="pure-menu-selected"><a href="#">Flickr</a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Finance</a></li>
+            </ul>
+          </div>
+        </p>
+      </article>
+      <article id="twoway">
+        <div class="grid">
+          <table class="pure-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="pure-table-odd">
+                    <td>1</td>
+                    <td>Honda</td>
+                    <td>Accord</td>
+                    <td>2009</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Toyota</td>
+                    <td>Camry</td>
+                    <td>2012</td>
+                </tr>
+
+                <tr class="pure-table-odd">
+                    <td>3</td>
+                    <td>Hyundai</td>
+                    <td>Elantra</td>
+                    <td>2010</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+      <div class="grid">
+        <form class="pure-form pure-form-stacked">
+          <fieldset>
+              <legend>A Stacked Form</legend>
+
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="Email">
+
+              <label for="password">Password</label>
+              <input id="password" type="password" placeholder="Password">
+
+              <label for="state">State</label>
+              <select id="state">
+                  <option>AL</option>
+                  <option>CA</option>
+                  <option>IL</option>
+              </select>
+
+              <label for="remember" class="pure-checkbox">
+                  <input id="remember" type="checkbox"> Remember me
+              </label>
+
+              <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+          </fieldset>
+        </form>
+      </div>
+    </article>
+
+    <article>
+        <p class="top-space">
+          And if you really hate those colors, <a href="http://purecss.io">Pure</a> offers you an awesome skin builder.</p>
       </article>
     </section>
 		
@@ -173,6 +249,19 @@
           <i class="fa fa-camera-retro fa-3x"></i>
           <i class="fa fa-camera-retro fa-4x"></i>
           <i class="fa fa-camera-retro fa-5x"></i>
+          <span class="fa-stack fa-lg fa-5x">
+            <i class="fa fa-camera fa-stack-1x"></i>
+            <i class="fa fa-ban fa-stack-2x text-danger"></i>
+          </span>
+        </div>
+        <div class="grid">
+          <p>...aaand spinning.
+
+            <i class="fa fa-circle-o-notch fa-spin fa-3x"></i>
+            <i class="fa fa-refresh fa-spin fa-3x"></i>
+            <i class="fa fa-cog fa-spin fa-3x"></i>
+          </p>
+          <p>Visit <a href="http://http://fontawesome.io">Font Awesome home</a> for more examples.</p>
         </div>
       </article>
     </section>
