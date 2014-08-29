@@ -6,23 +6,16 @@ Syntax error: File to import not found or unreadable: font-awesome-compass.
                 /Users/Camila/.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets
                 Compass::SpriteImporter
         on line 2 of /Library/WebServer/Documents/skellie/sass/fontawesome.scss
-        from line 12 of /Library/WebServer/Documents/skellie/sass/screen.scss
 
-1: /Library/WebServer/Documents/skellie/sass/screen.scss
+1: /Library/WebServer/Documents/skellie/sass/fontawesome.scss
 
 Backtrace:
 /Library/WebServer/Documents/skellie/sass/fontawesome.scss:2
-/Library/WebServer/Documents/skellie/sass/screen.scss:12
 /Users/Camila/.rvm/gems/ruby-2.1.1/gems/sass-3.2.19/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Users/Camila/.rvm/gems/ruby-2.1.1/gems/sass-3.2.19/lib/sass/tree/import_node.rb:45:in `import'
 /Users/Camila/.rvm/gems/ruby-2.1.1/gems/sass-3.2.19/lib/sass/tree/import_node.rb:28:in `imported_file'
 /Users/Camila/.rvm/gems/ruby-2.1.1/gems/sass-3.2.19/lib/sass/tree/import_node.rb:37:in `css_import?'
 /Users/Camila/.rvm/gems/ruby-2.1.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
-/Users/Camila/.rvm/gems/ruby-2.1.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/Camila/.rvm/gems/ruby-2.1.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/Camila/.rvm/gems/ruby-2.1.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/Users/Camila/.rvm/gems/ruby-2.1.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `map'
-/Users/Camila/.rvm/gems/ruby-2.1.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
 /Users/Camila/.rvm/gems/ruby-2.1.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/Camila/.rvm/gems/ruby-2.1.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /Users/Camila/.rvm/gems/ruby-2.1.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -82,4 +75,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: font-awesome-compass.\A               Load paths:\A                 /Library/WebServer/Documents/skellie/sass\A                 /Users/Camila/.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/blueprint/stylesheets\A                 /Users/Camila/.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 2 of /Library/WebServer/Documents/skellie/sass/fontawesome.scss\A         from line 12 of /Library/WebServer/Documents/skellie/sass/screen.scss\A \A 1: /Library/WebServer/Documents/skellie/sass/screen.scss"; }
+  content: "Syntax error: File to import not found or unreadable: font-awesome-compass.\A               Load paths:\A                 /Library/WebServer/Documents/skellie/sass\A                 /Users/Camila/.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/blueprint/stylesheets\A                 /Users/Camila/.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 2 of /Library/WebServer/Documents/skellie/sass/fontawesome.scss\A \A 1: /Library/WebServer/Documents/skellie/sass/fontawesome.scss"; }

@@ -7,9 +7,9 @@
 /*
 *  Import fonts
 */
-@import url($logo-font-url);
+@import url($logo-font-url);    //logo font
 //@import url($text-font-url);
-
+@import "fontawesome";          //fontawesome library
 /*
 *
 *  Simple fluid media
