@@ -19,15 +19,13 @@
 $top-space: #{$line/$em}em !default;
 
 figure {
-	position: relative;
-//    border: 1px solid;
+		position: relative;
     padding-bottom: $column;
 }
 
 figure img, figure object, figure embed, figure video {
-	width: 100%;
     display: block;
-    margin: 0 auto;
+		max-width: 100%;
     border-radius: 10px;
 		border: 1px solid black;
 }
@@ -74,6 +72,15 @@ p {
 *   Utility Classes
 */
 
+.main {
+//	margin: 0 auto 0;
+//	max-width: 67%;
+//	max-width: 87%;
+//  max-width: 950px;
+	border: 1px solid yellow;
+	display: block;
+}
+
 .logo {
   @include gigantic;
   @include loadFont($logo-font-color, $logo-font-size, $logo-font-weight, $logo-font-family);
@@ -100,7 +107,7 @@ p {
 }
 
 .top-space {
-  padding-top: $top-space;
+  margin-top: $top-space;
 }
 
 
@@ -119,7 +126,7 @@ body {
 }
 
 header, article, #twoway, #fourway {
-	margin: 0 $column;
+//	margin: 0 $column;
 }
 
 h1, h2 {
@@ -144,6 +151,10 @@ h3 {
 *  Simple elastic gutters
 *  Note: box-sizing will not work in IE6-7
 */
+.main {
+	max-width: 83%;
+	margin: 0 $column*1.5;
+}
 
 .grid {
 	padding: 0 #{($line/2)/$em}em;
@@ -204,9 +215,14 @@ h3 {
 		/* Reset baseline grid to 16/16 = 1 */
 		font-size: #{($font-size) / $em}em;
 	}
+	
+	.main {
+		max-width: 100%;
+		margin: 0 $column*1.3;
+	}
 
     header, article, #twoway, #fourway {
-		margin: 0 $column*1;
+//		margin: 0 $column*1;
 	}
 
 	#twoway .grid {
@@ -230,9 +246,14 @@ h3 {
 		/* Zoom baseline grid to 17/16 = 1.0625 */
 		font-size: #{($font-size) / $em}em;
 	}
+	
+	.main {
+		max-width: 100%;
+		margin: 0 $column*3;
+	}
 
     header, article, #twoway, #fourway {
-		margin: 0 $column*2;
+//		margin: 0 $column*2;
 	}
 }
 
@@ -246,7 +267,7 @@ h3 {
 	}
 
 	header, article, #twoway, #fourway {
-		margin: 0 $column*2;
+//		margin: 0 $column*2;
 	}
 
 }
@@ -261,7 +282,7 @@ h3 {
 	}
 
     header, article, #twoway, #fourway {
-		margin: 0 $column*3;
+//		margin: 0 $column*3;
 	}
 }
 
@@ -275,7 +296,7 @@ h3 {
 	}
 
 	header, article, #twoway, #fourway {
-		margin: 0 $column*3;
+//		margin: 0 $column*3;
 	}
 
 }
@@ -290,7 +311,7 @@ h3 {
 	}
 
     header, article, #twoway, #fourway {
-		margin: 0 $column*5;
+//		margin: 0 $column*5;
 	}
 
 }
@@ -344,6 +365,11 @@ h3 {
 		/* Zoom baseline grid to 18/16 = 1.125 */
 		font-size: #{($font-size + 2) / $em}em;
 		max-width: (2560/$em)em;
+	}
+	
+	.main {
+		max-width: 100%;
+		margin: 0 $column*5;
 	}
 
     header, article, #twoway, #fourway {
